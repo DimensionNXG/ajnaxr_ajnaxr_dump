@@ -1,0 +1,22 @@
+on boot
+    chown system system /sys/devices/platform/soc/soc:slide_rhostat/slide_rhostat_voltage_mv
+
+service ssnwtvrservice /system/bin/ssnwtvrserver
+    class late_start
+    user root
+    writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:shell:s0
+    capabilities SYS_NICE
+
+
+on property:persist.ssnwt.qvr.config=1
+    copy /mnt/vendor/persist/qvr/qvrservice_config_normal.txt /mnt/vendor/persist/qvr/qvrservice_config.txt
+    write /mnt/vendor/persist/qvr/last_config ${persist.ssnwt.qvr.config}
+    chown system system /mnt/vendor/persist/qvr/last_config
+    setprop persist.ssnwt.qvr.config 3
+
+on property:persist.ssnwt.qvr.config=2
+    copy /mnt/vendor/persist/qvr/qvrservice_config_calibration.txt /mnt/vendor/persist/qvr/qvrservice_config.txt
+    write /mnt/vendor/persist/qvr/last_config ${persist.ssnwt.qvr.config}
+    chown system system /mnt/vendor/persist/qvr/last_config
+    setprop persist.ssnwt.qvr.config 4

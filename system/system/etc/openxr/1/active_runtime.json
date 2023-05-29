@@ -1,0 +1,14 @@
+{
+    "file_format_version": "1.0.0",
+    "runtime": {
+        "library_path": "libopenxrapi.so",
+        "functions": {
+           "xrNegotiateLoaderRuntimeInterface":
+               "xrNegotiateLoaderRuntimeInterface",
+		   "xrNegotiateLoaderApiLayerInterface":
+               "xrNegotiateLoaderApiLayerInterface",
+		   "xrInitializeLoaderKHR":
+               "xrInitializeLoaderKHR"
+       }
+    }
+}

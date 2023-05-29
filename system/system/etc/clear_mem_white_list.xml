@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<AppList>
+    <app>com.skr.upgrade</app>
+    <app>com.ssnwt.vr.server</app>
+    <app>com.ssnwt.vr.server:mediaservice</app>
+    <app>com.ssnwt.vr.server:systemui</app>
+    <app>com.ssnwt.vr.voiceassist</app>
+</AppList>

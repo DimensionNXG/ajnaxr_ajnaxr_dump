@@ -1,0 +1,17 @@
+#! /vendor/bin/sh
+
+config_file="/data/system/svrserver/smb.config"
+
+if [ ! -f "$file" ]; then
+    config=`cat $config_file`
+
+    arr=(${config//,/ })
+
+    echo ${arr[@]}
+    echo "length:"${#arr[@]}
+
+    if [[ ${#arr[@]} -eq 4 ]]; then
+        mount -t cifs -o username=${arr[0]},password=${arr[1]},iocharset=utf8 ${arr[2]} ${arr[3]}
+        echo "mount success"
+    fi
+fi
