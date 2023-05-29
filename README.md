@@ -1,0 +1,14 @@
+# qssi-user 12 SKQ1.221224.001 27 test-keys
+- manufacturer: dimension nxg (ajnalens)
+- platform: kona
+- codename: AjnaXR
+- flavor: qssi-user
+- release: 12
+- id: SKQ1.221224.001
+- incremental: 27
+- tags: test-keys
+- fingerprint: qti/kona/kona:11/RKQ1.230105.001/27:user/test-keys
+- is_ab: true
+- brand: AjnaXR
+- branch: qssi-user-12-SKQ1.221224.001-27-test-keys
+- repo: ajnaxr_ajnaxr_dump

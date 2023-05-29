@@ -1,0 +1,40 @@
+#
+# Copyright (c) 2021-2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on post-fs-data
+    mkdir /dev/socket/qdma_app 0770 system misc
+    chmod 2770 /dev/socket/qdma_app
+
+    mkdir /data/misc/qdma 0770 system misc
+    mkdir /data/misc/qdma/up 0770 system misc
+    mkdir /data/misc/qdma/down 0770 system misc
+    mkdir /data/misc/qdma/conf 0770 system misc
+    mkdir /data/misc/qdma/shared 0770 system misc
+
+on property:vendor.qti.qdma.oper.mode=1
+    write /data/misc/qdma/conf/qdma.conf "OperationMode:1"
+    chown system misc /data/misc/qdma/conf/qdma.conf
+    chmod 0660 /data/misc/qdma/conf/qdma.conf
+
+on property:vendor.qti.qdma.oper.mode=2
+    write /data/misc/qdma/conf/qdma.conf "OperationMode:2"
+    chown system misc /data/misc/qdma/conf/qdma.conf
+    chmod 0660 /data/misc/qdma/conf/qdma.conf
+
+on property:vendor.qti.qdma.oper.mode=3
+    write /data/misc/qdma/conf/qdma.conf "OperationMode:3"
+    chown system misc /data/misc/qdma/conf/qdma.conf
+    chmod 0660 /data/misc/qdma/conf/qdma.conf
+
+on property:vendor.qti.qdma.oper.mode=4
+    write /data/misc/qdma/conf/qdma.conf "OperationMode:4"
+    chown system misc /data/misc/qdma/conf/qdma.conf
+    chmod 0660 /data/misc/qdma/conf/qdma.conf
+
+service qccsyshal@1.2-service /system/system_ext/bin/qccsyshal@1.2-service
+    class hal
+    user system
+    group misc system
