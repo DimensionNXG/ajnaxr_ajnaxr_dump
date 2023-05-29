@@ -1,0 +1,7 @@
+{
+"Api":{},
+"Terminator": {
+		"SXRTerminator": "libXRLoader_SXRTerminator.so"
+	     },
+"Runtime":{}
+}

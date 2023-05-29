@@ -1,0 +1,8 @@
+# Add skyhandservice sockets for skyhandservice
+service skyhand /system/bin/skyhandservice
+    class late_start
+    user system
+    group system camera graphics inet sdcard_rw
+    socket skyhandservice stream 0666 system system
+        seclabel u:r:shell:s0
+    capabilities SYS_NICE

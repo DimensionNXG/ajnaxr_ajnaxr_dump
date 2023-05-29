@@ -1,0 +1,10 @@
+on boot
+    chown system system /sys/class/slide_rhostat/slide_rhostat_voltage_mv
+    chown system system /sys/devices/platform/soc/soc:slide_rhostat/slide_rhostat_voltage_mv
+
+service ssnwtvrservice /system/bin/ssnwtvrserver
+    class late_start
+    user root
+    writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:shell:s0
+    capabilities SYS_NICE
