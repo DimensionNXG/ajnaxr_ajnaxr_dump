@@ -1,0 +1,14 @@
+# qssi-user 10 QKQ1.201018.002 17 test-keys
+- manufacturer: dimension nxg (ajnalens)
+- platform: kona
+- codename: AjnaXR
+- flavor: qssi-user
+- release: 10
+- id: QKQ1.201018.002
+- incremental: 17
+- tags: test-keys
+- fingerprint: qti/kona/kona:10/QKQ1.201018.002/17:user/test-keys
+- is_ab: true
+- brand: AjnaXR
+- branch: qssi-user-10-QKQ1.201018.002-17-test-keys
+- repo: ajnaxr_ajnaxr_dump
