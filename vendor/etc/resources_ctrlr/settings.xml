@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<settings>
+  <module name="input">
+    <param name="views">4</param>
+  </module>
+  <module name="detection">
+  <method name="gflv2_4view">
+      <param name="runtime">snpe</param>
+      <param name="devices">DSP</param>
+      <param name="input_names">images:0</param>
+      <param name="output_names">head/g_fcos/cls_0:0,head/g_fcos/g_fcos_head_lite/box_0:0,head/g_fcos/cls_1:0,head/g_fcos/g_fcos_head_lite/box_1:0</param>
+      <param name="model_param">models/v02_512_384_det_ctrl46_20230116_4f0d_3887421_17q.dlc</param>
+      <param name="model_bin"></param>
+      <param name="variables">7.1111111,14.2222222</param>
+    </method>
+  </module>
+  <module name="extraction">
+   <method name="cls4view">
+      <param name="runtime">snpe</param>
+      <param name="devices">DSP</param>
+      <param name="input_names">images:0</param>
+      <param name="output_names">pose:0</param>
+      <param name="model_param">models/v078_resnet_w128_4view_d1_mask_ep90_quant.dlc</param>
+      <param name="model_bin"></param>
+    </method>
+  </module>
+</settings>
