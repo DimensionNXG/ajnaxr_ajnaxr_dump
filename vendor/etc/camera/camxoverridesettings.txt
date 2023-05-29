@@ -1,0 +1,24 @@
+enableDualIFE=FALSE
+maxRAWSizes=3
+multiCameraEnable=TRUE
+multiCameraEnableFront=TRUE
+numMetadataResults=1
+
+# the following settings disable per-frame log messages
+# default is 0x1c080 (CORE + FORMAT + MEMSPY + HAL). Disable CORE & HAL.
+logInfoMask=0x0c000
+
+# default is 0xffffffff (all enabled). Disable CORE & HAL.
+logWarningMask=0xfffeff7f
+logConfigMask=0xfffeff7f
+
+# disable [REQMAP] messages
+logRequestMapping=FALSE
+
+# set CHIUSECASE levels to only ERROR and WARN
+overrideLogLevels=0x3
+
+numPCRsBeforeStreamOn=1
+
+# disable NCS service (needed for EIS, which we don't use)
+enableNCSService=FALSE
