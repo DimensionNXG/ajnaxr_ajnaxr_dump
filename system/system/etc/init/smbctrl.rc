@@ -1,0 +1,5 @@
+service smbctrl /system/bin/smbctrl
+    user root
+    group root
+    disabled
+    seclabel u:r:su:s0

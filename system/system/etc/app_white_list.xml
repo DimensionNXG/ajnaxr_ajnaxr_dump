@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<AppList>
+    <app type="app">com.AjnaXR.SteamVRClient</app>
+    <app type="app">org.mozilla.vrbrowser</app>
+    <app type="app">com.AjnaXR.swplayer</app>
+    <app type="app">com.SevenInvensun.AjnaXR_Cali</app>
+</AppList>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<AppList>
+    <app>com.ssnwt.vr.server</app>
+    <app>com.ssnwt.vr.server:mediaservice</app>
+    <app>com.ssnwt.vr.server:systemui</app>
+    <app>com.ssnwt.vr.voiceassist</app>
+    <app>com.qualcomm.qti.openxr.boundaryservice</app>
+    <app>com.qualcomm.qti.spaces.services</app>
+    <app>com.qualcomm.qti.spaces.services:QXRCoreServiceProcess</app>
+    <app>com.qualcomm.qti.openxrruntime</app>
+    <app>com.qualcomm.qti.openxrruntime:QXRCoreServiceProcess</app>
+</AppList>
