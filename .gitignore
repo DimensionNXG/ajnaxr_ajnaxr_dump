@@ -1,0 +1,11 @@
+recovery.img
+product/app/webview/webview.apk
+system/system/app/SteamVR/SteamVR.apk
+system/system/app/AJNAXRUI/AJNAXRUI.apk
+system/system/app/VRDisplay/VRDisplay.apk
+system/system/app/BoundarySetupApp/BoundarySetupApp.apk
+system/system/app/SvrServer/SvrServer.apk
+system/system/app/FirefoxReality/FirefoxReality.apk
+system/system/app/FirefoxReality/lib/arm64/libxul.so
+system/system/media/Movies/LandscapeVideo.mp4
+system/system/preset_app/OpenXRService.apk
