@@ -1,0 +1,49 @@
+{
+    "version": "0.2.8",
+    "device": "Morpheus_Kona",
+    "deviceMode": "AIO",
+    "sensor": {
+       "sensorOrientationCorrect": [0.0,0.0,0.0],
+       "sensorHeadOffset": [-0.0203,0.02224,0.04191],
+       "sensorPoseDelay": 0.5,
+       "sensorEnableProximity": 0,
+       "maxPredictedTime": 25.0,
+       "minPoseQuality": 0.7
+	},
+    "lens": {
+        "fovX": 95.0,
+        "fovY": 95.0
+    },
+    "display": {
+        "resolution": [3264,1600],
+        "rasterOrder": 2,
+        "enableSkewSquashCorrection": 0,
+        "displayRefreshRate": 72,
+        "timeToHalfExposure": 1.0,
+        "timeWarpWaitFramePercentage":0.5,
+        "meshOffsetLeft": [0,0],
+        "meshOffsetRight": [0,0],
+
+        // valid options are DISABLED, GPU, and DPU_SCALING
+        "cacMode": "GPU",
+
+        // cacDpuScaling object beloew is only used when cacMode is DPU_SCALING
+        "cacDpuScaling": {
+            "red": 1.1,
+            "green": 1.0,
+            "blue": 1.2
+        }
+    },
+    "frustum": {
+        "leftFrustum": [0.04,100,-0.042869,0.042869,0.042869,-0.042869],
+        "leftFrustumPosition" : [-0.032,0.0,0.0],
+        "leftFrustumRotation" : [0.0,0.0,0.0,1.0],
+        "rightFrustum": [0.04,100,-0.042869,0.042869,0.042869,-0.042869],
+        "rightFrustumPosition" : [0.032,0.0,0.0],
+        "rightFrustumRotation" : [0.0,0.0,0.0,1.0]
+    },
+    "perfLevel": [3,3],
+    "serialNumber": "C0027BGE4290018A",
+    "calibrationDate": "12/15/2022",
+    "inputSourceComponentName": "com.shadowcreator.apps.schandshankopenxrplugin/com.qualcomm.qti.openxr.input.SnapdragonInputService"
+}
